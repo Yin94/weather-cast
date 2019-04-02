@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+#container * {
+  border-radius: 4px;
+}
+
+#container #main-content-container {
+  position: absolute;
+  text-align: center;
+  background-color: grey;
+  width: 30%;
+  margin: auto;
+  opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#container #main-content-container form {
+  padding: 10px 10px 5px 0;
+  overflow: auto;
+}
+
+#container #main-content-container form input {
+  float: right;
+  width: 50%;
+  border-radius: 4px 0 0 4px;
+  border: 0;
+  font-size: 1.2em;
+  padding: 10px 5px;
+}
+
+#container #main-content-container form button {
+  float: right;
+  width: 20%;
+  background-color: blue;
+  padding: 10px 5px;
+  font-size: 1.2em;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  border-radius: 0 4px 4px 0;
+  outline: 0;
+}
+
+#container #main-content-container form button:hover {
+  cursor: pointer;
+}
+
+#container #main-content-container form button:active {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+#container #main-content-container #errorSpan {
+  display: none;
+  overflow: auto;
+  padding-right: 10px;
+}
+
+#container #main-content-container #errorSpan p {
+  text-align: left;
+  color: white;
+  background: red;
+  opacity: 1;
+  width: 70%;
+  padding: 5px;
+  float: right;
+}
+
+#container #main-content-container #datas {
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+}
+
+#container #main-content-container #datas * {
+  margin: 10px auto;
+}
+
+#container #main-content-container #datas h2:first-child {
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+#container #main-content-container #datas p {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+#container #main-content-container #datas img {
+  width: 100px;
+  height: 100px;
+}
+
+#container #main-content-container #datas #main {
+  border-radius: 0;
+  border-bottom: 2px white solid;
+  padding: 0 0 20px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  #container #main-content-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #container #main-content-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #container #main-content-container {
+    width: 95%;
+  }
+  #container #main-content-container form input {
+    width: 65%;
+  }
+  #container #main-content-container form button {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=app.css.map */

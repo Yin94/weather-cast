@@ -4,11 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="scripts/app.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
-  <body>
-    <div></div>
+  <body id='body'style="height:100vh">
+    <div id="container">
+      <div id="main-content-container">
+        <form onsubmit="onSubmit(event)">
+            <div id="controlGroup">
+              <button type="submit">search</button>
+              <input
+              type="text"
+              placeholder="input the city of weather to search"
+              />
+            </div>
+           
+          </form>
+          <div id="errorSpan">
+           <p>Error! Failed on search,<span> </span>please input valid location. e.g. Lodon, uk</p> 
+          </div>
+          <div id="datas">
+        
+            <h2 id="location"></h2>
+
+            <img id="icon"></img>
+            <h3 id="main"></h3>
+          <p id="other-infos"></p>
+        </div>
+      </div>
+    </div>
+
     <script src="scripts/app.js"></script>
   </body>
 </html>

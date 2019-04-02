@@ -1,0 +1,126 @@
+$mainColor: grey;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  * {
+    border-radius: 4px;
+  }
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: 100% 100%;
+  #main-content-container {
+    position: absolute;
+    text-align: center;
+    background-color: $mainColor;
+    width: 30%;
+    margin: auto;
+    opacity: 0.8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    form {
+      padding: 10px 10px 5px 0;
+
+      overflow: auto;
+      input {
+        float: right;
+        width: 50%;
+        border-radius: 4px 0 0 4px;
+        border: 0;
+        font-size: 1.2em;
+        padding: 10px 5px;
+      }
+      button {
+        float: right;
+        width: 20%;
+        background-color: blue;
+        padding: 10px 5px;
+        font-size: 1.2em;
+        color: white;
+        border: 0;
+        font-weight: bold;
+        border-radius: 0 4px 4px 0;
+        outline: 0;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      button:active {
+        filter: brightness(50%);
+      }
+    }
+    #errorSpan {
+      display: none;
+      overflow: auto;
+      padding-right: 10px;
+      p {
+        text-align: left;
+        color: white;
+        background: red;
+        opacity: 1;
+        width: 70%;
+        padding: 5px;
+        float: right;
+      }
+    }
+
+    #datas {
+      width: 80%;
+      left: 50%;
+      top: 50%;
+      margin: auto;
+      * {
+        margin: 10px auto;
+      }
+      h2:first-child {
+        margin-top: 40px;
+        font-size: 2em;
+      }
+      p {
+        margin-top: 30px;
+        padding-bottom: 20px;
+        text-align: left;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+
+      #main {
+        border-radius: 0;
+        border-bottom: 2px white solid;
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #container #main-content-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #container #main-content-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #container #main-content-container {
+    width: 95%;
+    form {
+      input {
+        width: 65%;
+      }
+      button {
+        width: 30%;
+      }
+    }
+  }
+}
